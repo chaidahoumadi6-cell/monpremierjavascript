@@ -1,4 +1,4 @@
-//ici,je rédige mon script javascript
+//ici,je rédige mon script javascript 
         let nom = "Houmadi";
         let prenom = "Shahida";
 
@@ -58,14 +58,14 @@
         console.log(eleves[2]);
 
         //j'ai récupere le 4e memdre du tableau grace indice 3
-        console.log(eleves[3]);
+        console.log(eleves[3]); 
 
 
         let client ={
             nom:"Houmadi",
             village:"pamandzi",
             age:19,
-            scores: [2,11,6]
+            scores: [2,11,6],
         };
 
         console.log(client);
@@ -75,3 +75,60 @@
         console.log(client.age);
         console.log(client.scores);
         console.log(client.scores[1]);
+        
+        //je définis un objet qui représente un joueur de football proffessionnel
+        let joueurprofessionnel ={
+
+            //la proriété "nom" désigne le nom du joueur
+            nom:"zinedine zidane",
+
+            //indique les nationalite du joueur
+            nationalite:["française", "algérienne"],
+
+            //désigne la dale de naissance d
+            datedenaissance:23061972,
+            taille:1.85,
+            piedfort:"droit",
+            poste:"milieu offensif"
+        };
+        //j' affiche l'ensemble de l'objet 
+        console.log(joueurprofessionnel);
+        console.log(joueurprofessionnel.nom);
+
+         //j' affiche la première nationalite de l'objet du joueur
+        console.log(joueurprofessionnel.nationalite[0]);
+
+        console.log(joueurprofessionnel.datedenaissance);
+        console.log(joueurprofessionnel.taille);
+        console.log(joueurprofessionnel.piedfort);
+        console.log(joueurprofessionnel.poste);
+        
+        let politique ={
+        
+            nom:"Estelle youssoufa",
+            datedenaissance:31071978,
+            née:"Chatenay-Malabry en france",
+            age:47,
+            Entreeenfonction:22062022,
+            profession:"journaliste",
+            precedepar:"Ramlati Ali",
+
+        };
+
+        console.log(politique);
+        console.log(politique.nom);
+        console.log(politique.datedenaissance);
+        console.log(politique.née);
+        console.log(politique.age);
+        console.log(politique.Entreeenfonction);
+        console.log(politique.profession);
+        console.log(politique.precedepar);
+        
+
+
+
+
+
+
+
+
