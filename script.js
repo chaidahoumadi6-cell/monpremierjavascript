@@ -89,7 +89,7 @@
             datedenaissance:23061972,
             taille:1.85,
             piedfort:"droit",
-            poste:"milieu offensif"
+            poste:"milieu offensif" ,
         };
         //j' affiche l'ensemble de l'objet 
         console.log(joueurprofessionnel);
