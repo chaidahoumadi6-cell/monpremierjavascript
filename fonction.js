@@ -38,3 +38,16 @@ function multiplication(chiffre1,chiffre2){
 
 let multiplier= multiplication(10,9);
 console.log("produit",multiplier);
+
+
+/*fonction multiplier prends deux paramètres : a et b
+*le paramètres à est multimlie par le paramètre b et le résultat est stokce dans la variable resultat
+*Enfin la fonction retourne ou renvoit le résultat.
+*/
+function multiplier(a,b){
+    let resultat = a * b;
+    return resultat;
+}
+let multiplier = multiplication(a,b);
+console.log("produit",multiplication);
+
