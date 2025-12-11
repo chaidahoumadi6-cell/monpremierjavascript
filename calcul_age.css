@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:cornflowerblue;
+    margin: 0;
+    };
+
+    .container {
+    width: 350px;
+    margin: auto;
+    background: #ffffffb1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(21, 78, 117, 0.388);
+};
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+};
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #0f697d;
+    border-radius: 5px;
+};
