@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculer lâge de la personne.</title>
-    <script src="dom_calcul_age.js"></script>
+    <script src="dom_calcul_age.js" defer></script>
+    <link href="calcul_age.css" rel="stylesheet">
+    
 </head>
 <body>
     
     <form id="userForm">
+        
 
+        <div id="recensement">
+            <p id="paragraphe1">Nous récensons 1 apopulation de Mayotte</p>
+        </div>
+        
+        
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom"><br><br>
 
-    <h2>calculer lâge de la personne.</h2>
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom"><br><br>
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom"><br><br>
-
-    <p>Situation :</p>
-    <input type="radio" id="etudiant" name="situation" value="étudiant">
-    <label for="etudiant">Étudiant</label><br>
-
-    <input type="radio" id="salarie" name="situation" value="salarié">
-    <label for="salarie">Salarié</label><br><br>
-
-    <label for="annee">Année de naissance :</label>
-    <input type="number" id="annee" name="annee"><br><br>
-
-
-     <!-- L’âge sera affiché ici -->
-     <div id="ageAffiche">
-       
-    </div>
     
+        <p>Situation :</p>
+    
+        <input type="radio" id="etudiant" name="situation" value="étudiant">
+        <label for="etudiant">Étudiant</label><br>
+        <input type="radio" id="salarie" name="situation" value="salarié">
+        <label for="salarie">Salarié</label><br><br>
+    
+        <div>
+
+            <label for="anneNaissance">Année de naissance :</label>
+            <input type="number" id ="anneNaissance" oninput="calculAge()">
+    
+        </div>
+        <br></br>
+
+        <input type="button" value="valide" id="boutonValide">
+
+        <!--
+         <button onclick="recupererInfos()" id = "boutonValide">valide</button>
+        -->
+    </form>     
 </body> 
+
 </html>
