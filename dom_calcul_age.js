@@ -35,3 +35,29 @@ if(anneeNaissance 2005  anneeNaissance <= anneeActuelle) {
 console.log("elementboutonValider:", elementBoutonValide);
  });
 
+ //je récupère la liste des communes de Mayotte
+ let elmentListeCommunes = document.querySelector("#listecommunes");
+
+ //puis je stocke les communes dans la variable Elment Liste Communes 
+ console.log(elmentListeCommunes);
+ 
+ //j' utilise la boucle For pour parcourir la liste ElmentListeCommunes
+ for (let i = 0; i < elmentListeCommunes.length ; i++) {
+
+    console.log(elmentListeCommunes[i]);
+}
+
+//j'utilise querySelectorAll pour récupèrer tous les membres de la meme classe
+let elementClassCommunes = document.querySelectorAll(".communes");
+
+
+//Cette forinstruction crée une boucle 
+for (let i = 0; i < elementClassCommunes.length ; i++) {
+
+
+    console.log(elementClassCommunes[i]);
+    
+
+   // l'intérieur d'une boucle, elle ne sera visible qu'à l'intérieur de la boucle.
+    console.log(elementClassCommunes[i].textContent);
+}
