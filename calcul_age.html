@@ -1,74 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculer lâge de la personne.</title>
-    <script src="dom_calcul_age.js" defer></script>
-    <link href="calcul_age.css" rel="stylesheet">
-    
+    <title>Calculer l'âge</title>
+
+    <link rel="stylesheet" href="calcul_age.css">
+    <script src="evenement.js" defer></script>
 </head>
+
 <body>
-    
 
- <form>
-   <article>
-    <h3 id="communes">communes de Mayotte</h3>
-    <ol id="listecommunes">
-        <li class="communes">Pamandzi</li>
-        <li class="communes">Dzaoudzi</li>
-        <li class="communes">Mamoudzou</li>
-        <li class="communes">Koungou</li>
-        <li class="communes">Sada</li>
-        <li class="communes">Acoua</li>
-        <li class="communes">Chiconi</li>
-        <li class="communes">Bandrele</li>
-        <li class="communes">Kani-Keli</li>
-        <li class="communes">Tsingoni</li>
-        <li class="communes">Chirongui</li>
-        <li class="communes">Mtsangamouji</li>
-        <li class="communes">Bandraboua</li>
-        <li class="communes">Ouangani</li>
-        <li class="communes">Dembéni</li>
-        <li class="communes">Bouéni</li>
-        <li class="communes">Mtsambord</li>
-    </ol>
-  </article>
- <form id="userForm">
-        
+    <!-- SECTION DATE -->
+    <section id="date" class="date">
+        <button type="button" id="validerDate">Date du jour</button>
+        <span id="dateDuJour"></span>
 
-        <div id="recensement">
-            <p id="paragraphe1">Nous récensons 1 apopulation de Mayotte</p>
-        </div>
-        
-        
+        <p>
+            Date au format local :
+            <span id="dateDuJourFormat2"></span>
+        </p>
+    </section>
+
+    <!-- LISTE DES COMMUNES -->
+    <section>
+        <h3 id="communes">Communes de Mayotte</h3>
+        <ol id="listecommunes">
+            <li>Pamandzi</li>
+            <li>Dzaoudzi</li>
+            <li>Mamoudzou</li>
+            <li>Koungou</li>
+            <li>Sada</li>
+            <li>Acoua</li>
+            <li>Chiconi</li>
+            <li>Bandrele</li>
+            <li>Kani-Keli</li>
+            <li>Tsingoni</li>
+            <li>Chirongui</li>
+            <li>Mtsangamouji</li>
+            <li>Bandraboua</li>
+            <li>Ouangani</li>
+            <li>Dembéni</li>
+            <li>Bouéni</li>
+            <li>Mtsamboro</li>
+        </ol>
+    </section>
+
+    <!-- FORMULAIRE UTILISATEUR -->
+    <form id="userForm">
+
+        <p id="paragraphe1">Nous recensons la population de Mayotte</p>
+
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom"><br><br>
+
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom"><br><br>
 
-    
         <p>Situation :</p>
-    
         <input type="radio" id="etudiant" name="situation" value="étudiant">
         <label for="etudiant">Étudiant</label><br>
+
         <input type="radio" id="salarie" name="situation" value="salarié">
         <label for="salarie">Salarié</label><br><br>
-    
-        <div>
 
-            <label for="anneNaissance">Année de naissance :</label>
-            <input type="number" id ="anneNaissance" oninput="calculAge()">
-    
-        </div>
-        <br></br>
+        <label for="anneeNaissance">Année de naissance :</label>
+        <input type="number" id="anneeNaissance"><br><br>
 
-        <input type="button" value="valide" id="boutonValide">
+        <p>Âge : <span id="age"></span></p>
 
-        <!--
-         <button onclick="recupererInfos()" id = "boutonValide">valide</button>
-        -->
-    </form>     
-</body> 
+        <button type="button" id="boutonValide">Valider</button>
 
+    </form>
+
+</body>
 </html>
