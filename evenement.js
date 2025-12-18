@@ -95,16 +95,31 @@ console.log("elementForm:", elementForm);
 
 //J'associe l'evénement 'submit'
 elementForm.addEventListener("submit",(event) =>{
+
+    // Empêche le comportement par défaut de l'événement
     event.preventDefault();
+
     console.log("### Je suis évenement submit du formuliare###");
 
+    // Récupère la valeur saisie dans le champ ayant l'id "nom"
     const nom = document.querySelector("#nom").value;
+
+    // Stocke le nom entré par l'utilisateur
     console.log("Nom:",nom);
 
+    // Récupère la valeur saisie dans le champ ayant l'id "prénom"
     const prenom = document.querySelector("#prenom").value;
+
+    // Stocke le prénom entré par l'utilisateur
     console.log("prenom:",prenom);
 
-    const situation = document.querySelector("#situation").value;
+    const situation = document.querySelector("#salarie").value;
+    console.log("Situation:", salarie);
+
+    const Annéenaissance = document.querySelector("#anneeNaissance").value;
+    console.log("anneeNaissance:",Annéenaissance);
+
+
     
 
 

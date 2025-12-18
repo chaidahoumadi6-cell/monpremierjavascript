@@ -2,9 +2,10 @@ body {
     font-family: Arial, sans-serif;
     background-color:cornflowerblue;
     margin: 0;
-    };
+    font-family: Arial, sans-serif;
+};
 
-    .container {
+.container {
     width: 350px;
     margin: auto;
     background: #ffffffb1;
@@ -26,4 +27,9 @@ input[type="number"] {
     margin-top: 5px;
     border: 1px solid #0f697d;
     border-radius: 5px;
+};
+
+input, button {
+  display: block;
+  margin: 10px 0;
 };
